@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sandhiya D – Cybersecurity Engineer, Ethical Hacker, AI Security Engineer. VAPT, AI-driven security, CTF competitor." />
+  <meta name="keywords" content="cybersecurity, ethical hacker, VAPT, AI security, penetration testing, SOC analyst, Sandhiya D" />
+  <meta name="author" content="Sandhiya D" />
+  <meta property="og:title" content="Sandhiya D | Cybersecurity Engineer" />
+  <meta property="og:description" content="Securing systems with AI-driven intelligence and an offensive security mindset." />
+  <meta property="og:type" content="website" />
+  <title>Sandhiya D // Cybersecurity Engineer</title>
+
+  <!-- OLD PORTFOLIO FONTS (Orbitron + Rajdhani + Share Tech Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- ═══ BOOT SCREEN ═══ -->
+  <div id="boot-screen">
+    <div class="boot-wrap">
+      <div class="boot-logo"><span class="bb">[</span>SD<span class="bb">]</span></div>
+      <div class="boot-lines" id="boot-text"></div>
+      <div class="boot-progress-wrap">
+        <div class="boot-progress" id="boot-progress"></div>
+      </div>
+      <div class="boot-status" id="boot-status">Initializing…</div>
+    </div>
+  </div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand"><span class="nb">[</span>SD<span class="nb">]</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#achievements">CTF</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- RESUME NAVBAR BUTTON — proper download -->
+      <a href="Resume_Sandhiya(5).pdf" download="Resume_Sandhiya.pdf" target="_blank" class="nav-cta" id="resume-btn">↓ Resume</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-grid-bg"></div>
+    <div class="glow-orb orb-l"></div>
+    <div class="glow-orb orb-r"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-fade" data-delay="0">
+        <span class="hb-dot"></span>
+        <span>Available for opportunities</span>
+      </div>
+      <h1 class="hero-name reveal-fade" data-delay="80">
+        Sandhiya<span class="ha"> D.</span>
+      </h1>
+      <div class="hero-role reveal-fade" data-delay="160">
+        <span class="rp">~/sec$&nbsp;</span><span id="typed-role"></span><span class="tc-blink">▌</span>
+      </div>
+      <p class="hero-tag reveal-fade" data-delay="240">
+        Securing systems through <mark>AI-driven intelligence</mark> and an <mark>offensive security mindset.</mark>
+      </p>
+      <div class="hero-ctas reveal-fade" data-delay="320">
+        <a href="#projects" class="btn-p">
+          <svg width="13" height="13" viewBox="0 0 14 14"><path d="M7 1L13 7L7 13M1 7H13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          View Projects
+        </a>
+        <a href="#contact" class="btn-o">Contact Me</a>
+        <!-- DOWNLOAD CV — proper anchor download, no JS alert -->
+        <a href="Resume_Sandhiya(5).pdf" download="Resume_Sandhiya.pdf" target="_blank" class="btn-g" id="dl-resume">↓ Download CV</a>
+      </div>
+      <div class="hero-stats reveal-fade" data-delay="400">
+        <div class="hs-stat"><span class="hs-num" data-count="2">0</span><span class="hs-lbl">Cyber Projects</span></div>
+        <span class="hs-div"></span>
+        <div class="hs-stat"><span class="hs-num" data-count="8">0</span><span class="hs-lbl">Security Tools</span></div>
+        <span class="hs-div"></span>
+        <div class="hs-stat"><span class="hs-num" data-count="5">0</span><span class="hs-lbl">Certifications</span></div>
+        <span class="hs-div"></span>
+        <div class="hs-stat"><span class="hs-num" data-count="2">0</span><span class="hs-lbl">CTF Wins</span></div>
+      </div>
+    </div>
+    <div class="scanline"></div>
+    <a href="#about" class="scroll-cue">
+      <span class="sc-word">scroll</span>
+      <div class="sc-line"><div class="sc-dot"></div></div>
+    </a>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about">
+    <div class="sc">
+      <div class="sec-label">01 // ABOUT</div>
+      <div class="about-grid">
+        <div class="about-l reveal-up">
+          <h2 class="sh">Security-first<br><em>mindset.</em></h2>
+          <div class="about-prose">
+            <p>I'm a <strong>Cybersecurity Engineering student</strong> at KCG College of Technology (CGPA&nbsp;8.44), graduating 2027 — building at the intersection of <strong>offensive security</strong> and <strong>AI-driven threat detection</strong>.</p>
+            <p>My journey started with curiosity about how systems break. That curiosity evolved into real VAPT engagements, CTF podium finishes, and AI-powered security tools. I don't just find vulnerabilities — I understand why they exist and architect systematic defenses against them.</p>
+            <p>Whether scanning for OWASP Top 10 flaws, engineering adaptive Zero Trust concepts, or deploying ML for anomaly detection — I approach every challenge with an <strong>attacker's instinct and a defender's discipline.</strong></p>
+          </div>
+          <div class="tag-row">
+            <span class="tag r">Red Teaming</span>
+            <span class="tag b">AI Security</span>
+            <span class="tag d">Malware Analysis</span>
+            <span class="tag g">Threat Detection</span>
+            <span class="tag d">Security Automation</span>
+            <span class="tag b">Cloud Security</span>
+          </div>
+        </div>
+        <div class="about-r reveal-up" data-delay="120">
+          <div class="profile-card glass">
+            <div class="pc-topbar">
+              <span class="pcd r"></span><span class="pcd y"></span><span class="pcd g"></span>
+              <span class="pc-fn">profile.json</span>
+            </div>
+            <div class="json-lines">
+              <div class="jl"><span class="jk">name</span><span class="jc">:</span> <span class="jv s">"Sandhiya D"</span><span class="jc">,</span></div>
+              <div class="jl"><span class="jk">role</span><span class="jc">:</span> <span class="jv a">"Cybersecurity Engineer"</span><span class="jc">,</span></div>
+              <div class="jl"><span class="jk">focus</span><span class="jc">:</span> <span class="jv s">"Offensive + AI Security"</span><span class="jc">,</span></div>
+              <div class="jl"><span class="jk">edu</span><span class="jc">:</span> <span class="jv s">"B.E CSE – Cybersecurity"</span><span class="jc">,</span></div>
+              <div class="jl"><span class="jk">college</span><span class="jc">:</span> <span class="jv s">"KCG College of Tech"</span><span class="jc">,</span></div>
+              <div class="jl"><span class="jk">cgpa</span><span class="jc">:</span> <span class="jv n">8.44</span><span class="jc">,</span></div>
+              <div class="jl"><span class="jk">grad</span><span class="jc">:</span> <span class="jv n">2027</span><span class="jc">,</span></div>
+              <div class="jl"><span class="jk">status</span><span class="jc">:</span> <span class="jv bv">"seeking_roles"</span></div>
+            </div>
+            <div class="pc-socials">
+              <a href="https://www.linkedin.com/in/sandhiya-d-7b13692a5/" target="_blank" class="soc-pill lk">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7H10v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://github.com/Sandhiya-1205" target="_blank" class="soc-pill gh">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="radar-card glass">
+            <div class="rc-label">// CAPABILITY RADAR</div>
+            <div class="rm"><span class="rl">Penetration Testing</span><div class="rt"><div class="rf" data-w="87"></div></div><span class="rp2">87%</span></div>
+            <div class="rm"><span class="rl">OWASP Coverage</span><div class="rt"><div class="rf" data-w="85"></div></div><span class="rp2">85%</span></div>
+            <div class="rm"><span class="rl">AI/ML Security</span><div class="rt"><div class="rf blue-rf" data-w="82"></div></div><span class="rp2">82%</span></div>
+            <div class="rm"><span class="rl">Security Automation</span><div class="rt"><div class="rf blue-rf" data-w="80"></div></div><span class="rp2">80%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills">
+    <div class="sc">
+      <div class="sec-label">02 // SKILLS MATRIX</div>
+      <h2 class="sh centered reveal-fade">Technical <em>Arsenal</em></h2>
+      <div class="skills-quad">
+        <div class="sq-card glass reveal-up" data-delay="0">
+          <div class="sqh"><div class="sq-ico ri">⚔</div><span>Offensive Security</span></div>
+          <div class="chips">
+            <span class="chip r">VAPT</span><span class="chip r">OWASP Top 10</span><span class="chip r">Web Pen Testing</span>
+            <span class="chip r">Network Recon</span><span class="chip r">SQLi / XSS</span><span class="chip r">Threat Analysis</span>
+          </div>
+        </div>
+        <div class="sq-card glass reveal-up" data-delay="80">
+          <div class="sqh"><div class="sq-ico bi">🛡</div><span>Defensive Security</span></div>
+          <div class="chips">
+            <span class="chip b">Risk Analysis</span><span class="chip b">IDS/IPS</span><span class="chip b">Malware Analysis</span>
+            <span class="chip b">Zero Trust</span><span class="chip b">Security Reporting</span><span class="chip b">Firewall Design</span>
+          </div>
+        </div>
+        <div class="sq-card glass reveal-up" data-delay="160">
+          <div class="sqh"><div class="sq-ico gi">🤖</div><span>AI / ML Security</span></div>
+          <div class="chips">
+            <span class="chip g">TensorFlow</span><span class="chip g">PyTorch</span><span class="chip g">Anomaly Detection</span>
+            <span class="chip g">Computer Vision</span><span class="chip g">Classification Models</span><span class="chip g">NLP</span>
+          </div>
+        </div>
+        <div class="sq-card glass reveal-up" data-delay="240">
+          <div class="sqh"><div class="sq-ico pi">⌨</div><span>Programming</span></div>
+          <div class="chips">
+            <span class="chip p">Python</span><span class="chip p">JavaScript</span><span class="chip p">C / C++</span>
+            <span class="chip p">HTML / CSS</span><span class="chip p">Bash Scripting</span>
+          </div>
+        </div>
+      </div>
+      <div class="sec-label" style="margin-top:4rem;margin-bottom:1.5rem">// SECURITY TOOLKIT</div>
+      <div class="toolkit">
+        <div class="tk glass reveal-up" data-delay="0"><div class="tk-e">🕷</div><div class="tk-n">Burp Suite</div><div class="tk-t">Web Proxy</div></div>
+        <div class="tk glass reveal-up" data-delay="40"><div class="tk-e">📡</div><div class="tk-n">Nmap</div><div class="tk-t">Recon</div></div>
+        <div class="tk glass reveal-up" data-delay="80"><div class="tk-e">💣</div><div class="tk-n">Metasploit</div><div class="tk-t">Exploitation</div></div>
+        <div class="tk glass reveal-up" data-delay="120"><div class="tk-e">💉</div><div class="tk-n">SQLmap</div><div class="tk-t">SQLi</div></div>
+        <div class="tk glass reveal-up" data-delay="160"><div class="tk-e">🦈</div><div class="tk-n">Wireshark</div><div class="tk-t">Packets</div></div>
+        <div class="tk glass reveal-up" data-delay="200"><div class="tk-e">🔍</div><div class="tk-n">OWASP ZAP</div><div class="tk-t">DAST</div></div>
+        <div class="tk glass reveal-up" data-delay="240"><div class="tk-e">🔓</div><div class="tk-n">Gobuster</div><div class="tk-t">Fuzzing</div></div>
+        <div class="tk glass reveal-up" data-delay="280"><div class="tk-e">🐉</div><div class="tk-n">Kali Linux</div><div class="tk-t">Platform</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects">
+    <div class="sc">
+      <div class="sec-label">03 // SECURITY PROJECTS</div>
+      <h2 class="sh centered reveal-fade">Case <em>Studies</em></h2>
+
+      <!-- PROJECT 1 — VAPT FEATURED -->
+      <div class="proj-hero glass reveal-up">
+        <div class="ph-tag-row">
+          <span class="live-badge"><span class="lb-dot"></span>LIVE ENGAGEMENT</span>
+          <span class="ph-type">WEB APPLICATION VAPT</span>
+        </div>
+        <div class="ph-layout">
+          <div class="ph-l">
+            <h3 class="ph-title">HindustanSchools.in<br><span class="ph-sub">Security Assessment Report</span></h3>
+            <p class="ph-intro">A structured, methodology-driven web application penetration test against a live education platform. Identified and documented critical vulnerabilities using the OWASP Top 10 framework, manual testing techniques, and automated tooling — culminating in a boardroom-ready security report with actionable remediation guidance.</p>
+            <div class="phases">
+              <div class="phase">
+                <div class="pn">01</div>
+                <div class="pb">
+                  <div class="pt">Reconnaissance</div>
+                  <p>Passive OSINT via WHOIS, Shodan, and Google dorking. Active recon with Nmap enumerated open ports (80, 443, 3306), service versions, OS fingerprinting, and CMS identification.</p>
+                </div>
+              </div>
+              <div class="phase">
+                <div class="pn">02</div>
+                <div class="pb">
+                  <div class="pt">Scanning & Enumeration</div>
+                  <p>Gobuster bruteforced directories, exposing <code>/admin</code> and <code>/backup</code>. Burp Suite intercepted session cookies, auth tokens, and POST parameters. OWASP ZAP ran full DAST scans across all endpoints.</p>
+                </div>
+              </div>
+              <div class="phase">
+                <div class="pn">03</div>
+                <div class="pb">
+                  <div class="pt">Exploitation & Findings</div>
+                  <p>Confirmed SQL Injection in login endpoint via SQLmap. Identified IDOR at <code>/user?id=</code>, reflected XSS in search param, and missing HSTS/CSP headers. All findings CVSS v3.1 scored.</p>
+                </div>
+              </div>
+              <div class="phase">
+                <div class="pn">04</div>
+                <div class="pb">
+                  <div class="pt">Risk Report Delivery</div>
+                  <p>Delivered structured VAPT report with executive summary, technical evidence with PoC screenshots, risk matrix, CVSS scoring, and a prioritised remediation roadmap aligned with OWASP.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tbadges">
+              <span class="tb">Burp Suite</span><span class="tb">Nmap</span><span class="tb">SQLmap</span>
+              <span class="tb">OWASP ZAP</span><span class="tb">Gobuster</span><span class="tb">OWASP Top 10</span>
+            </div>
+          </div>
+          <div class="ph-r">
+            <div class="term-win">
+              <div class="tw-bar">
+                <span class="td-dot dr"></span><span class="td-dot dy"></span><span class="td-dot dg"></span>
+                <span class="tw-name">vapt_scan.sh — kali</span>
+              </div>
+              <div class="tw-body">
+                <div class="tl"><span class="tp">$</span> nmap -sV -A -T4 hindustanschools.in</div>
+                <div class="tl tg">PORT 80/tcp   OPEN  Apache httpd 2.4</div>
+                <div class="tl tg">PORT 443/tcp  OPEN  SSL/TLS</div>
+                <div class="tl tg">PORT 3306/tcp OPEN  MySQL 5.7</div>
+                <div class="tl tc2"># Directory enumeration…</div>
+                <div class="tl"><span class="tp">$</span> gobuster dir -u target -w common.txt</div>
+                <div class="tl tr2">[!] /admin    → 200 OK</div>
+                <div class="tl tr2">[!] /backup   → 200 OK</div>
+                <div class="tl tc2"># Running SQLmap…</div>
+                <div class="tl"><span class="tp">$</span> sqlmap -u "target/login" --dbs</div>
+                <div class="tl ty2">[CRITICAL] SQLi confirmed at /login</div>
+                <div class="tl ty2">[HIGH]     IDOR at /user?id=</div>
+                <div class="tl ty2">[HIGH]     XSS in ?search=</div>
+                <div class="tl ty2">[MEDIUM]   Missing HSTS header</div>
+                <div class="tl tc2"># Generating CVSS report…</div>
+                <div class="tl tg">✓ VAPT Report: 7 findings exported</div>
+              </div>
+            </div>
+            <div class="risk-grid">
+              <div class="rg critical"><span class="rsev">CRITICAL</span><span class="rn">01</span></div>
+              <div class="rg high"><span class="rsev">HIGH</span><span class="rn">02</span></div>
+              <div class="rg medium"><span class="rsev">MEDIUM</span><span class="rn">03</span></div>
+              <div class="rg low"><span class="rsev">LOW</span><span class="rn">01</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 — ZERO TRUST FIREWALL -->
+      <div class="proj-wide glass reveal-up" data-delay="80">
+        <div class="pw-l">
+          <div class="pw-badge">ARCHITECTURE DESIGN · NETWORK SECURITY</div>
+          <h3 class="pw-title">Adaptive Zero Trust Firewall</h3>
+          <p class="pw-intro">Designed a conceptual Zero Trust network firewall that dynamically adjusts access policies in real-time using behavioral AI, device posture scoring, and live threat intelligence — moving beyond perimeter-based thinking to identity-aware, packet-level verification.</p>
+          <div class="pw-points">
+            <div class="pwp"><span class="pwb">▸</span><div><strong>Architecture:</strong> Micro-segmentation + identity-aware proxy with least-privilege enforcement per session</div></div>
+            <div class="pwp"><span class="pwb">▸</span><div><strong>AI Engine:</strong> Behavioral baseline model flags deviation scores above threshold — no static rules</div></div>
+            <div class="pwp"><span class="pwb">▸</span><div><strong>Threat Intel:</strong> Integrated live IP reputation feeds with internal anomaly scores for dynamic access decisions</div></div>
+            <div class="pwp"><span class="pwb">▸</span><div><strong>Security Vision:</strong> "Never trust, always verify" — enforced at packet level, not just the network edge</div></div>
+          </div>
+          <div class="tbadges">
+            <span class="tb tb-b">Zero Trust</span><span class="tb tb-b">IDS/IPS</span><span class="tb tb-b">Python</span>
+            <span class="tb tb-b">Behavioral AI</span><span class="tb tb-b">Network Architecture</span>
+          </div>
+        </div>
+        <div class="pw-r">
+          <div class="arch-box glass">
+            <div class="arch-hdr">// Zero Trust Flow</div>
+            <div class="arch-flow">
+              <div class="af-node user-n">User/Device</div>
+              <div class="af-arr">→</div>
+              <div class="af-node">Identity Verify</div>
+              <div class="af-arr">→</div>
+              <div class="af-node ai-n">AI Posture Score</div>
+              <div class="af-arr">→</div>
+              <div class="af-node">Policy Engine</div>
+              <div class="af-arr">→</div>
+              <div class="af-node res-n">Access Granted</div>
+            </div>
+            <div class="arch-note">"Never trust, always verify — at every hop."</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE ═══ -->
+  <section id="experience">
+    <div class="sc">
+      <div class="sec-label">04 // EXPERIENCE</div>
+      <h2 class="sh centered reveal-fade">Professional <em>Timeline</em></h2>
+      <div class="timeline">
+        <div class="tle reveal-up" data-delay="0">
+          <div class="tle-dot"></div>
+          <div class="tle-card glass">
+            <div class="tle-now">CURRENT</div>
+            <div class="tle-date">Jan 2026 – Apr 2026</div>
+            <h3 class="tle-role">Cybersecurity Intern</h3>
+            <div class="tle-org">UptoSkills — Virtual Internship</div>
+            <ul class="tle-list">
+              <li>Conducting VAPT on web applications — network scanning, enumeration, and exploitation</li>
+              <li>Performing OWASP Top 10 testing (SQLi, XSS, IDOR) with documented CVSS scoring</li>
+              <li>Producing professional security audit reports with executive summaries and remediation plans</li>
+              <li>Working with Burp Suite, SQLmap, Nuclei, Wapiti, Nmap, and Gobuster</li>
+            </ul>
+            <div class="chips">
+              <span class="chip r">Burp Suite</span><span class="chip r">Nmap</span><span class="chip r">OWASP</span><span class="chip d">Security Audit</span>
+            </div>
+          </div>
+        </div>
+        <div class="tle reveal-up" data-delay="120">
+          <div class="tle-dot blue-dot"></div>
+          <div class="tle-card glass">
+            <div class="tle-date">Apr 2025 – Aug 2025</div>
+            <h3 class="tle-role">AI / ML Intern</h3>
+            <div class="tle-org">MitBots — Virtual Internship</div>
+            <ul class="tle-list">
+              <li>Built AI-enhanced Question Bank Framework model for educational institutes</li>
+              <li>Developed ML-powered Fitness Tracking daily monitoring system</li>
+            </ul>
+            <div class="chips">
+              <span class="chip g">TensorFlow</span><span class="chip g">Python</span><span class="chip g">NLP</span>
+            </div>
+          </div>
+        </div>
+        <div class="tle reveal-up" data-delay="200">
+          <div class="tle-dot blue-dot"></div>
+          <div class="tle-card glass">
+            <div class="tle-date">Jan 2025 – Apr 2025</div>
+            <h3 class="tle-role">AI / ML Intern</h3>
+            <div class="tle-org">UptoSkills — Virtual Internship</div>
+            <ul class="tle-list">
+              <li>Eye-Disease Classification — AI-powered vision loss disease classifier (Glaucoma, Cataract, etc.)</li>
+              <li>Crowd Surveillance — AI-enhanced anomaly and gender detection in crowd environments</li>
+            </ul>
+            <div class="chips">
+              <span class="chip g">PyTorch</span><span class="chip g">Computer Vision</span><span class="chip g">YOLO</span>
+            </div>
+          </div>
+        </div>
+        <div class="tle reveal-up" data-delay="300">
+          <div class="tle-dot edu-dot"></div>
+          <div class="tle-card glass">
+            <div class="tle-date">2023 – 2027</div>
+            <h3 class="tle-role">B.E Computer Science Engineering</h3>
+            <div class="tle-org">KCG College of Technology — Cybersecurity Specialization</div>
+            <ul class="tle-list">
+              <li>CGPA: <strong>8.44</strong> — Specialization in Cybersecurity</li>
+              <li>Core: Network Security, Cryptography, Ethical Hacking, AI/ML, Operating Systems</li>
+              <li>Active in security clubs, CTF competitions, and research projects</li>
+            </ul>
+            <div class="chips">
+              <span class="chip p">Cybersecurity</span><span class="chip p">CGPA 8.44</span><span class="chip p">AI/ML</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ACHIEVEMENTS ═══ -->
+  <section id="achievements">
+    <div class="sc">
+      <div class="sec-label">05 // CTF & ACHIEVEMENTS</div>
+      <h2 class="sh centered reveal-fade">Competitive <em>Record</em></h2>
+      <div class="ach-grid">
+        <div class="ach-card glass gold-c reveal-up" data-delay="0">
+          <div class="ach-med">🥇</div>
+          <div class="ach-rank gold-t">1st Place</div>
+          <h3 class="ach-name">ZERO DAY CTF</h3>
+          <p class="ach-desc">Secured first place in the inter-college CTF hosted by KCG Department of Cybersecurity — web exploitation, cryptography, reverse engineering, forensics, and OSINT challenges.</p>
+          <div class="ach-bar-wrap"><div class="ach-bar gold-b"></div></div>
+        </div>
+        <div class="ach-card glass bronze-c reveal-up" data-delay="100">
+          <div class="ach-med">🥉</div>
+          <div class="ach-rank bronze-t">3rd Place</div>
+          <h3 class="ach-name">Cyber Hackathon</h3>
+          <p class="ach-desc">Placed 3rd in the SRM University Cyber Hackathon — built a security solution prototype under 24-hour constraints, demonstrating rapid threat modeling and development.</p>
+          <div class="ach-bar-wrap"><div class="ach-bar bronze-b"></div></div>
+        </div>
+        <div class="ach-card glass reveal-up" data-delay="200">
+          <div class="ach-med">🎯</div>
+          <div class="ach-rank">Active Practitioner</div>
+          <h3 class="ach-name">TryHackMe Streak</h3>
+          <p class="ach-desc">30-day cybersecurity practice streak — completing rooms in penetration testing, privilege escalation, web hacking, and Active Directory attack paths.</p>
+          <div class="ach-bar-wrap"><div class="ach-bar streak-b"></div></div>
+        </div>
+        <div class="ach-card glass reveal-up" data-delay="300">
+          <div class="ach-med">🎪</div>
+          <div class="ach-rank">Event Leadership</div>
+          <h3 class="ach-name">Cyber Fest Lead</h3>
+          <p class="ach-desc">Event Lead at Cyber Fest Cybersecurity Symposium — organized and ran the Among Us Cybersecurity social engineering challenge event.</p>
+          <div class="ach-bar-wrap"><div class="ach-bar report-b"></div></div>
+        </div>
+      </div>
+
+      <div class="sec-label" style="margin-top:5rem;margin-bottom:1.5rem">// CERTIFICATIONS</div>
+      <div class="cert-row">
+        <div class="cert-c glass reveal-up" data-delay="0"><div class="cert-org">KCG × Datayaan</div><div class="cert-n">VAPT (76 hrs)</div><div class="cert-v">✓ Verified</div></div>
+        <div class="cert-c glass reveal-up" data-delay="70"><div class="cert-org">Cisco</div><div class="cert-n">Intro to Cybersecurity</div><div class="cert-v">✓ Verified</div></div>
+        <div class="cert-c glass reveal-up" data-delay="140"><div class="cert-org">Cisco</div><div class="cert-n">CCNA – Networks</div><div class="cert-v">✓ Verified</div></div>
+        <div class="cert-c glass reveal-up" data-delay="210"><div class="cert-org">Python.org</div><div class="cert-n">Python Essentials 1 &amp; 2</div><div class="cert-v">✓ Verified</div></div>
+        <div class="cert-c glass reveal-up" data-delay="280"><div class="cert-org">NPTEL</div><div class="cert-n">Privacy &amp; Security Online</div><div class="cert-v">✓ Verified</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ INTERESTS ═══ -->
+  <section id="interests">
+    <div class="sc">
+      <div class="sec-label">06 // RESEARCH INTERESTS</div>
+      <h2 class="sh centered reveal-fade">Security <em>Philosophy</em></h2>
+      <div class="int-grid">
+        <div class="int-card glass reveal-up" data-delay="0"><div class="int-i">🔴</div><h3>Red Teaming</h3><p>Simulating advanced threat actors to stress-test defenses. Understanding full attack chains from initial access to lateral movement and exfiltration.</p></div>
+        <div class="int-card glass reveal-up" data-delay="80"><div class="int-i">🦠</div><h3>Malware Analysis</h3><p>Static and dynamic analysis of malicious code to understand behavior, persistence mechanisms, and C2 communication patterns.</p></div>
+        <div class="int-card glass reveal-up" data-delay="160"><div class="int-i">🤖</div><h3>AI Security Engineering</h3><p>Applying ML to automate threat detection, build intelligent SIEM enrichment, and detect zero-day anomalies at scale.</p></div>
+        <div class="int-card glass reveal-up" data-delay="240"><div class="int-i">🔒</div><h3>Zero Trust Architecture</h3><p>Designing systems where no user or device is implicitly trusted — continuous verification at every layer of the network stack.</p></div>
+        <div class="int-card glass reveal-up" data-delay="320"><div class="int-i">☁️</div><h3>Cloud Security</h3><p>Securing cloud-native infrastructure against IAM misconfigurations, S3 exposure, container escapes, and cloud-specific vectors.</p></div>
+        <div class="int-card glass reveal-up" data-delay="400"><div class="int-i">⚡</div><h3>Security Automation</h3><p>Building automated recon pipelines, SIEM alert enrichment workflows, and vulnerability triage systems using Python.</p></div>
+      </div>
+      <div class="phi-block reveal-up">
+        <div class="phi-q">"</div>
+        <blockquote>An attacker only needs to succeed once. A defender must succeed every single time. That asymmetry is exactly why I choose to think like both.</blockquote>
+        <div class="phi-a">— Sandhiya D</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STATS ═══ -->
+  <section id="stats">
+    <div class="stats-wrap">
+      <div class="stats-inner glass reveal-fade">
+        <div class="si"><div class="sn" data-count="2">0</div><div class="sl">Cyber Projects</div></div>
+        <div class="sd"></div>
+        <div class="si"><div class="sn" data-count="8">0</div><div class="sl">Tools Mastered</div></div>
+        <div class="sd"></div>
+        <div class="si"><div class="sn" data-count="5">0</div><div class="sl">Certifications</div></div>
+        <div class="sd"></div>
+        <div class="si"><div class="sn" data-count="2">0</div><div class="sl">CTF Wins</div></div>
+        <div class="sd"></div>
+        <div class="si"><div class="sn" data-count="844">0</div><div class="sl">CGPA ×100</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact">
+    <div class="sc">
+      <div class="sec-label">07 // CONTACT</div>
+      <h2 class="sh centered reveal-fade">Open to <em>Opportunities</em></h2>
+      <p class="contact-sub reveal-fade" data-delay="60">Available for cybersecurity internships, entry-level roles, and research collaborations. Let's build something secure.</p>
+      <div class="contact-grid">
+
+        <!-- CONTACT FORM — pure frontend simulation, no backend needed -->
+        <div class="cf-wrap glass reveal-up">
+          <div class="cf-hdr">// SEND A MESSAGE</div>
+          <form id="contact-form" class="cform" novalidate>
+            <div class="fg">
+              <label for="f-name">Name</label>
+              <input type="text" id="f-name" name="name" placeholder="Your full name" autocomplete="name" />
+              <div class="fline"></div>
+            </div>
+            <div class="fg">
+              <label for="f-email">Email <span class="req">*</span></label>
+              <input type="email" id="f-email" name="email" placeholder="your@email.com" autocomplete="email" required />
+              <div class="fline"></div>
+            </div>
+            <div class="fg">
+              <label for="f-subject">Subject</label>
+              <input type="text" id="f-subject" name="subject" placeholder="Internship inquiry / Collaboration" />
+              <div class="fline"></div>
+            </div>
+            <div class="fg">
+              <label for="f-msg">Message <span class="req">*</span></label>
+              <textarea id="f-msg" name="message" rows="5" placeholder="Tell me about the opportunity…" required></textarea>
+              <div class="fline"></div>
+            </div>
+            <button type="submit" class="submit-btn" id="submit-btn">
+              <span class="sbt" id="btn-text">Send Message</span>
+              <span class="sba" id="btn-arrow">→</span>
+            </button>
+            <div class="form-feedback hidden" id="form-msg"></div>
+          </form>
+        </div>
+
+        <!-- INFO PANEL -->
+        <div class="ci-col">
+          <div class="ci-card glass reveal-up" data-delay="80">
+            <div class="ci-hdr">// CONNECT DIRECTLY</div>
+            <a href="https://www.linkedin.com/in/sandhiya-d-7b13692a5/" target="_blank" rel="noopener" class="ci-row">
+              <div class="ci-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7H10v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></div>
+              <div><div class="ci-plat">LinkedIn</div><div class="ci-val">Sandhiya D</div></div>
+              <div class="ci-arr">→</div>
+            </a>
+            <a href="https://github.com/Sandhiya-1205" target="_blank" rel="noopener" class="ci-row">
+              <div class="ci-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></div>
+              <div><div class="ci-plat">GitHub</div><div class="ci-val">Sandhiya-1205</div></div>
+              <div class="ci-arr">→</div>
+            </a>
+            <a href="mailto:sandhiyaalamelu2005@gmail.com" class="ci-row">
+              <div class="ci-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg></div>
+              <div><div class="ci-plat">Email</div><div class="ci-val">sandhiyaalamelu2005@gmail.com</div></div>
+              <div class="ci-arr">→</div>
+            </a>
+          </div>
+          <div class="roles-card glass reveal-up" data-delay="160">
+            <div class="ci-hdr">// OPEN TO ROLES</div>
+            <div class="role-r"><span class="rdot r"></span>Penetration Tester</div>
+            <div class="role-r"><span class="rdot b"></span>SOC Analyst (L1/L2)</div>
+            <div class="role-r"><span class="rdot g"></span>Vulnerability Analyst</div>
+            <div class="role-r"><span class="rdot b"></span>AI Security Engineer</div>
+            <div class="role-r"><span class="rdot d"></span>Security Researcher</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo"><span class="nb">[</span>SD<span class="nb">]</span> Sandhiya D</div>
+      <div class="footer-quote">"Security is not a product, it is a process." — Bruce Schneier</div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/sandhiya-d-7b13692a5/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Sandhiya-1205" target="_blank">GitHub</a>
+        <a href="mailto:sandhiyaalamelu2005@gmail.com">Email</a>
+      </div>
+      <div class="footer-copy">© 2025 Sandhiya D · Built with security mindset</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
